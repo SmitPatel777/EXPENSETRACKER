@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00b7eb"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/heading"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <!-- Month Navigation -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:background="@color/blue"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingTop="9dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/previousDate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/blue"-->
+<!--            app:srcCompat="@drawable/ic_chevron" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/currentMonth"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/blue"-->
+<!--            android:text="October, 2024"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="21sp" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/nextDate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:rotation="180"-->
+<!--            app:srcCompat="@drawable/ic_chevron" />-->
+<!--    </LinearLayout>-->
+
+    <!-- Chart View -->
+    <com.anychart.AnyChartView
+        android:id="@+id/anychart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu_1"
+        app:itemActiveIndicatorStyle="@style/App.CustomIndicator" />
+
+</LinearLayout>

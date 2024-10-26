@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#00b7eb</color>
+    <color name="darkblue">#0088cc</color>
+    <color name="textColor">#353535</color>
+    <color name="greenColor">#4caf50</color>
+    <color name="redColor">#f44336</color>
+    <color name="colorCash">#ff8c00</color> <!-- Example color for Cash -->
+    <color name="colorCheque">#26A69A</color> <!-- Example color for Cheque -->
+    <color name="colorNetBanking">#32cd32</color> <!-- Example color for NetBanking -->
+    <color name="colorOther">#ff00ff</color> <!-- Example color for Other -->
+</resources>
